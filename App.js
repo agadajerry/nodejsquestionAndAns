@@ -1,13 +1,12 @@
-const express =  require("express");
+import express from "express";
+import nodeQuestions from "./corrected.js";
+import cors from "cors";
 
-const nodeQuestions = require("./corrected.js")
-const cors = require("cors")
 
 const app = express();
-
-app.use(cors())
 app.use(express.json())
 
+app.use(cors())
 
 
 app.get("/",(req,res)=>{
@@ -18,3 +17,5 @@ app.get("/",(req,res)=>{
 app.listen(3000,()=>{
     console.log("App is running now!!!")
 })
+
+export default app;

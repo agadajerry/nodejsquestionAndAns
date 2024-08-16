@@ -1,4 +1,4 @@
-module.exports = [
+export default  [
     {
       "q": "What is the correct code to get a normalized path? (Select all that apply)",
       "options":
